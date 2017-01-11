@@ -58,7 +58,7 @@ public class GameWorld implements Runnable{
        do{
            
            
-           
+           world.repaint();
            
        }while(cicle);
     }

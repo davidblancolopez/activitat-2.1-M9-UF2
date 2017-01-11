@@ -11,8 +11,6 @@ import java.util.Iterator;
  */
 public class GameWorld implements Runnable{
     
-    Ball [] list;
-    WorldCanvas canvas;
     
     public GameWorld (){
        
@@ -36,7 +34,7 @@ public class GameWorld implements Runnable{
 
     public Iterator<Ball> getBalls() {
         Iterator<Ball> balls = null;
-        this.canvas = new WorldCanvas();
+        
         
         
         return balls;
@@ -50,13 +48,8 @@ public class GameWorld implements Runnable{
         return count;
     }
     
-    
-    
-    
-        
+
     public void run(){
-//       do{
-//           
-//       }while();
+        
     }
 }

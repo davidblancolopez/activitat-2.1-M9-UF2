@@ -11,6 +11,7 @@ import java.util.Iterator;
  */
 public class GameWorld implements Runnable{
     WorldCanvas world;
+    boolean cicle = true;
 
     
     public GameWorld (){
@@ -18,11 +19,13 @@ public class GameWorld implements Runnable{
     }
 
     public void startSimulation(){
-        
+        //Creació del fil que s'executara de forma ciclica.
+        Thread hilo = new Thread(new GameWorld());
     }
     
     public void endSimulation(){
         
+        cicle = false;
     }
 
     public void init(WorldCanvas canvas) {
@@ -52,6 +55,11 @@ public class GameWorld implements Runnable{
     
 
     public void run(){
-       
+       do{
+           
+           
+           
+           
+       }while(cicle);
     }
 }

@@ -11,18 +11,19 @@ import activitat2.pkg1.m9.uf2.GameWorld;
  *
  * @author Usuario
  */
-public class GameApp{
-GameFrame frame = new GameFrame();
- 
-/**
-  * @param args the command line arguments
-  */
-public static void main(String[] args) {
-GameApp app = new GameApp();
-GameWorld ballWorld = new GameWorld();
-app.frame.init(ballWorld);
-ballWorld.init(app.frame.getCanvas());
- 
-app.frame.setVisible(true);
-}
+public class GameApp {
+
+    GameFrame frame = new GameFrame();
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        GameApp app = new GameApp();
+        GameWorld ballWorld = new GameWorld();
+        app.frame.init(ballWorld);
+        ballWorld.init(app.frame.getCanvas());
+
+        app.frame.setVisible(true);
+    }
 }

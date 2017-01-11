@@ -10,7 +10,8 @@ import java.util.Iterator;
  * @author ALUMNEDAM
  */
 public class GameWorld implements Runnable{
-    
+    WorldCanvas world;
+
     
     public GameWorld (){
        
@@ -25,6 +26,7 @@ public class GameWorld implements Runnable{
     }
 
     public void init(WorldCanvas canvas) {
+        this.world = canvas;
         
     }
 
@@ -50,6 +52,6 @@ public class GameWorld implements Runnable{
     
 
     public void run(){
-        
+       
     }
 }

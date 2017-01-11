@@ -13,7 +13,7 @@ public class GameWorld implements Runnable{
     Ball list;
     
     public GameWorld (){
-    
+        
     }
 
     public void startSimulation(){

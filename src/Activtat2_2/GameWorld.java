@@ -45,9 +45,9 @@ public class GameWorld implements Runnable{
     public Iterator<Ball> getBalls() {
         Iterator<Ball> balls = bolas.iterator();
         
-//        while(balls.hasNext()){
-//            
-//        }
+        while(balls.hasNext()){
+            
+        }
          
         return balls;
     }

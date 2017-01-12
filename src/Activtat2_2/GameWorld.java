@@ -22,10 +22,13 @@ public class GameWorld implements Runnable{
         this.hilo = new Thread(new GameWorld());
     }
 
+    //Metode que inicia la simulació cridan al metode rn del propi metode.
     public void startSimulation(){
         hilo.start();
     }
     
+    //Metode que serveix per a finalitzar la simulació, canvia el boolean que fa
+    //funcionar el bucle del metode run.
     public void endSimulation(){
         cicle = false;
     }
@@ -34,6 +37,7 @@ public class GameWorld implements Runnable{
         this.world = canvas;
     }
 
+    //Metode que afegeix una bola a la lista de boles que tenim.
     public void addBall(Ball b) {
         bolas.add(b);
     }
@@ -41,13 +45,15 @@ public class GameWorld implements Runnable{
     public Iterator<Ball> getBalls() {
         Iterator<Ball> balls = bolas.iterator();
         
-        while(balls.hasNext()){
-            
-        }
+//        while(balls.hasNext()){
+//            
+//        }
          
         return balls;
     }
 
+    //Metode que retorna el numero de boles que hi ha actualment, retorna el tamany 
+    //de la llista de boles anomenat bolas.
     public int getBallCount() {
         int count = 0;
         

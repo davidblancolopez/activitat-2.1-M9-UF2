@@ -16,7 +16,7 @@ public class GameWorld implements Runnable{
     WorldCanvas world;
     boolean cicle = true;
     //Creació del fil que s'executara de forma ciclica.
-    Thread hilo = new Thread(new GameWorld());
+    Thread hilo = new Thread(this);
     
     public GameWorld (){
        

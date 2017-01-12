@@ -22,7 +22,7 @@ public class GameWorld implements Runnable{
        
     }
 
-    //Metode que inicia la simulació cridan al metode rn del propi metode.
+    //Metode que inicia la simulació cridan al metode run del propi metode.
     public void startSimulation(){
         hilo.start();
     }

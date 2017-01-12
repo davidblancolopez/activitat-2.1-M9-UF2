@@ -44,11 +44,6 @@ public class GameWorld implements Runnable{
 
     public Iterator<Ball> getBalls() {
         Iterator<Ball> balls = bolas.iterator();
-        
-        while(balls.hasNext()){
-            
-        }
-         
         return balls;
     }
 
@@ -65,8 +60,7 @@ public class GameWorld implements Runnable{
 
     public void run(){
         do{
-            try{
-                
+ 
             //Aquest bucle recorre tota la llista de boles i crida al metode move 
             //de cadascuna per a que actualitzin la seva posició.
             for (Ball i : bolas) {
@@ -76,7 +70,7 @@ public class GameWorld implements Runnable{
             //Metode repaint que s'encarregara de tornar a pintar tota la pantalla amb
             //la posició actualitzada de cada bola.
             world.repaint();
-             
+            try{
             //Es pausa el fil durant 30 milisegons
             Thread.sleep(30);
             

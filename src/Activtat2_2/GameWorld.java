@@ -41,7 +41,7 @@ public class GameWorld implements Runnable{
     }
 
     public Iterator<Ball> getBalls() {
-        Iterator<Ball> balls = null;
+        Iterator<Ball> balls = bolas.iterator();
         
         
         

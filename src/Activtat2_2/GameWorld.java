@@ -16,10 +16,10 @@ public class GameWorld implements Runnable{
     WorldCanvas world;
     boolean cicle = true;
     //Creació del fil que s'executara de forma ciclica.
-    Thread hilo;
+    Thread hilo = new Thread(new GameWorld());
     
     public GameWorld (){
-        this.hilo = new Thread(new GameWorld());
+       
     }
 
     //Metode que inicia la simulació cridan al metode rn del propi metode.
@@ -66,6 +66,9 @@ public class GameWorld implements Runnable{
     public void run(){
         do{
             try{
+                
+            //Aquest bucle recorre tota la llista de boles i crida al metode move 
+            //de cadascuna per a que actualitzin la seva posició.
             for (Ball i : bolas) {
                 i.move(world.getSize());
             }
@@ -76,6 +79,7 @@ public class GameWorld implements Runnable{
              
             //Es pausa el fil durant 30 milisegons
             Thread.sleep(30);
+            
             }catch(InterruptedException e){
                 
             }

@@ -51,7 +51,7 @@ public class GameWorld implements Runnable{
     public int getBallCount() {
         int count = 0;
         
-        
+        bolas.size();
         
         return count;
     }

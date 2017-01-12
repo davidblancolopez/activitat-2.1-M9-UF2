@@ -5,8 +5,6 @@
  */
 package Activtat2_2;
 
-import activitat2.pkg1.m9.uf2.GameWorld;
-
 /**
  *
  * @author Usuario

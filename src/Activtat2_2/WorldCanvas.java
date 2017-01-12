@@ -9,7 +9,6 @@ package Activtat2_2;
  *
  * @author Usuario
  */
-import activitat2.pkg1.m9.uf2.GameWorld;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;

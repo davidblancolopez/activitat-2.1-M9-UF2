@@ -12,7 +12,7 @@ public class Ball extends Ellipse2D.Double {
 
     private double dx;
     private double dy;
-    private double speed = 1;
+    private double speed = 100;
     private Color color;
 
     public Ball() {

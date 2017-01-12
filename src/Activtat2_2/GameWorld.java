@@ -50,11 +50,8 @@ public class GameWorld implements Runnable{
     //Metode que retorna el numero de boles que hi ha actualment, retorna el tamany 
     //de la llista de boles anomenat bolas.
     public int getBallCount() {
-        int count = 0;
         
-        bolas.size();
-        
-        return count;
+        return bolas.size();
     }
     
 
@@ -72,7 +69,7 @@ public class GameWorld implements Runnable{
             world.repaint();
             try{
             //Es pausa el fil durant 30 milisegons
-            Thread.sleep(30);
+            Thread.sleep(16);
             
             }catch(InterruptedException e){
                 

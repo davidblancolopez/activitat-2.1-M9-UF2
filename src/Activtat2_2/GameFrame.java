@@ -10,6 +10,7 @@ package Activtat2_2;
  * @author Usuario
  */
 import java.awt.Color;
+import java.util.Random;
 
 public class GameFrame extends javax.swing.JFrame {
 
@@ -132,13 +133,17 @@ public class GameFrame extends javax.swing.JFrame {
     }// </editor-fold>
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+        for (int i = 0; i < 20; i++) {
         float x = (float) (Math.random() * this.getWidth());
         float y = (float) (Math.random() * this.getHeight());
         float angle = (float) (Math.random() * 360);
-        float speed = (float) (Math.random() * 8);
-        Ball b = new Ball(x, y, 20, speed, angle, Color.red);
+        float speed = (float) (Math.random() - 1 * 8);
+        Random r = new Random();
+        Color c = new Color(r.nextInt(255), r.nextInt(255), r.nextInt(255));
+        Ball b = new Ball(x, y, 20, speed, angle, c);
         worldCanvas.add(b);
         jTextField1.setText(String.valueOf(worldCanvas.getBallCount()));
+        }
     }
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {

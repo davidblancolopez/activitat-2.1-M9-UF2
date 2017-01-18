@@ -22,7 +22,7 @@ public class GameWorld implements Runnable{
        
     }
 
-    //Metode que inicia la simulació cridan al metode run del propi metode.
+    //Metode que inicia la simulació iniciara el metode run de la class.
     public void startSimulation(){
         hilo.start();
     }
@@ -33,6 +33,8 @@ public class GameWorld implements Runnable{
         cicle = false;
     }
 
+    //Aquest metode assigna a la variable world que tenim de tipus WOrldCanvas el canvas
+    //que li arriba per parametre.
     public void init(WorldCanvas canvas) {
         this.world = canvas;
     }
@@ -42,6 +44,7 @@ public class GameWorld implements Runnable{
         bolas.add(b);
     }
 
+    //Aquest metode el que fa es crear un iterador i el retorna.
     public Iterator<Ball> getBalls() {
         Iterator<Ball> balls = bolas.iterator();
         return balls;

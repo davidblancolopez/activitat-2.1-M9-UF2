@@ -34,7 +34,7 @@ public class GameWorld implements Runnable{
     }
 
     //Aquest metode assigna a la variable world que tenim de tipus WOrldCanvas el canvas
-    //que li arriba per parametre.
+    //que li arriba per parametre per iniciar-lo.
     public void init(WorldCanvas canvas) {
         this.world = canvas;
     }
@@ -45,6 +45,7 @@ public class GameWorld implements Runnable{
     }
 
     //Aquest metode el que fa es crear un iterador i el retorna.
+    //Serveix per a recorrer tot l'array de boles
     public Iterator<Ball> getBalls() {
         Iterator<Ball> balls = bolas.iterator();
         return balls;
@@ -57,7 +58,7 @@ public class GameWorld implements Runnable{
         return bolas.size();
     }
     
-
+    //El metode run es qui executa el moviment de les boles y refresca la imatge de la pantalla.
     public void run(){
         do{
  
